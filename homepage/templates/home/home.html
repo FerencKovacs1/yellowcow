@@ -26,35 +26,37 @@
   <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
   <!-- Main Stylesheet File -->
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
 
 </head>
 
 <body id="body">
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container">
-      <!--
-      <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">The Yellow<span>Cow</span></a></h1>
-      </div>-->
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu ">
-          <li class="menu-active"><a href="#body">Főoldal</a></li>
-          <li><a href="#about">Rólunk</a></li>
-          <li><a href="#services">Szolgáltatások</a></li>
-          <li><a href="#contact">Kapcsolat</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
 
-  <!--==========================
-    Intro Section
-  ============================-->
+  <header class="main_h">
+
+      <div class="row">
+          <a class="logo" href="#">P/F</a>
+
+          <div class="mobile-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+
+          <nav>
+              <ul>
+                  <li><a href="#body">Főoldal</a></li>
+                  <li><a href="#about">Rólunk</a></li>
+                  <li><a href="#services">Szolgáltatásaink</a></li>
+                  <li><a href="{% url 'kapcsolat' %}"</a>Kapcsolat</li>
+              </ul>
+          </nav>
+
+      </div> <!-- / row -->
+
+  </header>
   <section id="intro">
 
     <div class="intro-content">
@@ -103,6 +105,7 @@
           </div>
         </div>
       </div>
+
     </section><!-- #about -->
 
     <!--==========================
@@ -198,90 +201,7 @@
           </div>
         </div>
       </section><!-- #about -->
-<!--
-    <section id="portfolio" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>A Legmodernebb technológiákkal építjük a világot, hogy a márkád kitűnjön a tömegből.</h2>
-          <h4>
-            Ha több pénzt akarsz keresni az online térben, ha hatékonyabb kiszolgáló rendszereket építenél, ha nem találod a célcsoportod,
-            vagy ha az offline értékesítésed konvertálnád az online világba,
-            építs adatvezérelt marketing és kereskedelmi stratégiánkra, fogadd meg,
-            amit tanácsolunk, vagy bízd ránk, hogy megcsináljuk Veled és a csapatoddal közösen.</h4>
-        </div>
-      </div>
-    </section>
--->
 
-
-
-        <!--==========================
-          Services Section
-        ============================-->
-        <!--
-        <section id="services">
-          <div class="container">
-            <div class="section-header">
-              <h2>Miért válassz minket ?</h2>
-              <p></p>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="  fadeInLeft">
-                  <br />
-
-                  <h4 class="title"><a href="">PPC kampányok</a></h4>
-                  <p class="description">Google Ads kampánykezelés, hogy az első helyen szerepelj a google rendszerében.
-                        Állandó kommunikációval és eredmény kimutatással.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="box wow ">
-                  <div class="icon"><i class="fas fa-fist-raised"></i></div>
-                  <h4 class="title"><a href="">SEO</a></h4>
-                  <p class="description">A leghatékonyabb vevőszerző módszer jelenleg az, ha honlapja elöl van a Google keresőben. Közös munkával segítünk előre kerülni!</p>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="box  fadeInLeft">
-                  <div class="icon"><i class="fas fa-chart-bar"></i></div>
-                  <h4 class="title"><a href="">PPC kampányok</a></h4>
-                  <p class="description">Google Ads kampánykezelés, hogy az első helyen szerepelj a google rendszerében.
-                        Állandó kommunikációval és eredmény kimutatással.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="box wow ">
-                  <div class="icon"><i class="fas fa-fist-raised"></i></div>
-                  <h4 class="title"><a href="">SEO</a></h4>
-                  <p class="description">A leghatékonyabb vevőszerző módszer jelenleg az, ha honlapja elöl van a Google keresőben. Közös munkával segítünk előre kerülni!</p>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="box wow ">
-                  <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                  <h4 class="title"><a href="">Közösségi média</a></h4>
-                  <p class="description">Csapatunk segítségével használja ki az új médiumokban rejlő hihetetlen lehetőségeket.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="box wow">
-                  <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-                  <h4 class="title"><a href="">Adatvezérelt stratégia</a></h4>
-                  <p class="description">Értsd meg és használd jobban az adataidat, együtt megértjük felhasználóidat</p>
-                   <br />
-                 </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>--><!-- #services -->
         <!--==========================
           Call To Action Section
         ============================-->
@@ -296,7 +216,7 @@
                   hogy zökkenőmentesen hajózzunk a digitális jövőbe.</h4>
               </div>
               <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle" href="{% url 'kapcsolat' %}">Kezdjük el!</a>
+                <a class="cta-btn align-middle" href="{% url 'kapcsolat' %}">Kapcsolat felvétel</a>
               </div>
             </div>
 
@@ -316,9 +236,8 @@
   </footer><!-- #footer -->
 
 
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
