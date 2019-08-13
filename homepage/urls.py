@@ -6,6 +6,10 @@ from django.views.generic.base import RedirectView
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
+    url('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
+    url(r'seo^$', views.index, name='index'),
+    url(r'ppc-kampány^$', views.index, name='index'),
+
+
 
 ]
