@@ -4,5 +4,5 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'home/home.html')
 
-def seo(request):
-    return render(request, 'home/seo.html')
+def kapcsolat(request):
+    return render(request, 'home/kapcsolat.html')
