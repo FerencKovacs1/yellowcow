@@ -1,29 +1,33 @@
-<<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>The Yellow Cow </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <title></title>
-    <style>
-            body{background:#59ABE3;margin:0}
-      .form{width:340px;height:440px;background:#ffffff;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
-      h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
-      input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
-      input:focus{border-bottom:2px solid #78788c}
-      p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
-      button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #FFD90F;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
-      button:hover{background:#FFD90F;color:#fff}
-    </style>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yellow Cow Digitális marketing ahogy még sosem láttad</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="PPC kampányok digitális térben email marketing adatvezérelt landing page keszites közösségi media" name="keywords">
+  <meta content="PPC kampányok digitális térben email marketing adatvezérelt landing page keszites közösségi media" name="description">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+  <!-- Main Stylesheet File -->
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
   </head>
   <body>
-    <form class="form">
-      <h2>Írd le, miben segíthetünk:</h2>
-      <p type=""><input placeholder="Neved"></input></p>
-      <p type=""><input placeholder="Email -címed"></input></p>
-      <p type=""><input placeholder="Üzeneted"></input></p>
+
+    <h3 class="title"><a href="{% url 'index' %}">Vissza</a></h3>
+     <form class="form">
+        <h2>Írd le, miben segíthetünk:</h2>
+        <p type=""><input placeholder="Neved"></input></p>
+        <p type=""><input placeholder="Email -címed"></input></p>
+        <p type=""><input placeholder="Üzeneted"></input></p>
 
       <button>Küldés</button>
 
