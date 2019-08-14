@@ -18,7 +18,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #51d8af;
+  color: #FFD90F;
   outline: none;
   text-decoration: none;
 }
@@ -321,11 +321,31 @@ h6 {
   padding-bottom: 10px;
 }
 
+#about .cta-btn {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 26px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 3px solid #0c2e8a;
+  color: #0c2e8a;
+}
+
+#about .cta-btn:hover {
+  background: #FFD90F;
+  border: 3px solid #FFD90F;
+}
+
 /* Services Section
 --------------------------------*/
 
 #services {
   padding: 30px 0 0 0;
+  background: url("/static/images/com.svg") 50% 0 no-repeat fixed;
+
 }
 
 #services .box {
@@ -382,18 +402,19 @@ h6 {
 }
 
 
+
 /* Call To Action Section
 --------------------------------*/
 
 #call-to-action {
-  background: #6b85cd;
+  background: #0c2e8a;
   background-size: cover;
   padding: 40px 0;
 }
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -649,4 +670,67 @@ h6 {
   #contact #google-map {
     margin-top: 20px;
   }
+}
+
+
+/* Services2 Section
+--------------------------------*/
+
+#services2 {
+  padding: 30px 0 0 0;
+  background: url("/static/images/.svg") 50% 0 no-repeat fixed;
+
+}
+
+#services2 .box {
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: #fff;
+  transition: 0.4s;
+}
+
+#services2 .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+
+#services2 .box .icon {
+  float: left;
+}
+
+#services2 .box .icon i {
+  color: #444;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+
+#services2 .box .icon i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #FFD90F 0%, #a3ebd5 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#services2 .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#services2 .box h4 a {
+  color: #444;
+}
+
+#services2 .box p {
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
 }
