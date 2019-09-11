@@ -11,14 +11,14 @@ body {
 }
 
 a {
-  color: #FFD90F;
+  color: #8ac5c3;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #FFD90F;
+  color: #8ac5c3;
   outline: none;
   text-decoration: none;
 }
@@ -58,11 +58,11 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #topbar .contact-info i {
-  color: #FFD90F;
+  color: #8ac5c3;
   padding: 4px;
 }
 
@@ -81,7 +81,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #topbar .social-links a:first-child {
@@ -111,13 +111,13 @@ h6 {
 }
 
 #header #logo h1 a {
-  color: #0c2e8a;
+  color: #f7d900a;
   line-height: 1;
   display: inline-block;
 }
 
 #header #logo h1 a span {
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #header #logo img {
@@ -134,6 +134,8 @@ h6 {
   height: 60vh;
   position: relative;
   background-size: cover;
+  background: url("/static/images/cyb.jpg") 50% 0  fixed;
+
 }
 
 #intro .intro-content {
@@ -164,14 +166,14 @@ h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: #ff9a00;
   margin-bottom: 30px;
   font-size: 42px;
   font-weight: 700;
 }
 
 #intro .intro-content h2 span {
-  color: #FFD90F;
+  color: #8ac5c3;
   text-decoration: underline;
 }
 
@@ -190,23 +192,23 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  background: #f7d900a;
+  border: 2px solid #f7d900a;
 }
 
 #intro .intro-content .btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: #f7d900a;
 }
 
 #intro .intro-content .btn-projects {
-  background: #FFD90F;
-  border: 2px solid #FFD90F;
+  background: #8ac5c3;
+  border: 2px solid #8ac5c3;
 }
 
 #intro .intro-content .btn-projects:hover {
   background: none;
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #intro #intro-carousel {
@@ -244,7 +246,7 @@ h6 {
 
 .section-header h2 {
   font-size: 32px;
-  color: #0c2e8a;
+  color: #f7d900a;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -257,7 +259,7 @@ h6 {
   display: block;
   width: 50px;
   height: 3px;
-  background: #FFD90F;
+  background: #8ac5c3;
   bottom: 0;
   left: 0;
 }
@@ -284,7 +286,7 @@ h6 {
 }
 
 #about .content h2 {
-  color: #0c2e8a;
+  color: #f7d900a;
   font-weight: 700;
   font-size: 36px;
   font-family: "Raleway", sans-serif;
@@ -309,7 +311,7 @@ h6 {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #about .content ul {
@@ -330,13 +332,13 @@ h6 {
   border-radius: 3px;
   transition: 0.5s;
   margin: 10px;
-  border: 3px solid #0c2e8a;
-  color: #0c2e8a;
+  border: 3px solid #f7d900a;
+  color: #f7d900a;
 }
 
 #about .cta-btn:hover {
-  background: #FFD90F;
-  border: 3px solid #FFD90F;
+  background: #8ac5c3;
+  border: 3px solid #8ac5c3;
 }
 
 /* Services Section
@@ -344,7 +346,7 @@ h6 {
 
 #services {
   padding: 30px 0 0 0;
-  background: url("/static/images/whi.png") 50% 0  fixed;
+  background: url("/static/images/geo.jpg") 50% 0  fixed;
 
 }
 
@@ -376,8 +378,8 @@ h6 {
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, #FFD90F 0%, #a3ebd5 100%);
+  background: #f7d900a;
+  background: linear-gradient(45deg, #8ac5c3 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -407,7 +409,7 @@ h6 {
 --------------------------------*/
 
 #call-to-action {
-  background: #0c2e8a;
+  background: #000;
   background-size: cover;
   padding: 40px 0;
 }
@@ -436,8 +438,8 @@ h6 {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #FFD90F;
-  border: 3px solid #FFD90F;
+  background: #8ac5c3;
+  border: 3px solid #8ac5c3;
 }
 
 
@@ -457,7 +459,7 @@ h6 {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #contact .contact-info address,
@@ -479,7 +481,7 @@ h6 {
 }
 
 #contact .contact-info a:hover {
-  color: #FFD90F;
+  color: #8ac5c3;
 }
 
 #contact .contact-address,
@@ -494,8 +496,8 @@ h6 {
 }
 
 #contact .form #sendmessage {
-  color: #FFD90F;
-  border: 1px solid #FFD90F;
+  color: #8ac5c3;
+  border: 1px solid #8ac5c3;
   display: none;
   text-align: center;
   padding: 15px;
@@ -536,7 +538,7 @@ h6 {
 }
 
 #contact .form button[type="submit"] {
-  background: #FFD90F;
+  background: #8ac5c3;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -571,7 +573,7 @@ h6 {
 }
 
 #footer .credits a {
-  color: #0c2e8a;
+  color: #f7d900a;
 }
 
 @media (min-width: 768px) {
@@ -710,8 +712,8 @@ h6 {
 }
 
 #services2 .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, #FFD90F 0%, #a3ebd5 100%);
+  background: #f7d900a;
+  background: linear-gradient(45deg, #8ac5c3 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -733,4 +735,45 @@ h6 {
   margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
+}
+
+
+
+/* SCROLLING ICON Section
+--------------------------------*/
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #000;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
