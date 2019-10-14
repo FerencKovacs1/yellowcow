@@ -27,228 +27,163 @@
   <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 
 </head>
-  <body id="body">
-    <header class="main_h">
+  <body>
+
+    <div id="siteWrapper">
+        <div class="container">
         <div class="row">
-            <a class="logo" href="#">YC
-            </a>
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#body">Főoldal</a></li>
-                    <li><a href="#about">Rólunk</a></li>
-                    <li><a href="#"</a>Blog</li>
-                    <li><a href="#services">Szolgáltatásaink</a></li>
-                    <li><a href="#call-to-action"</a>Kapcsolat</li>
-                </ul>
-            </nav>
-        </div> <!-- / row -->
-
-    </header>
-    <section id="intro">
-
-      <div class="intro-content">
-        <h2 > Azon dolgozunk, hogy <span>SEO és digitális marketing</span>  megoldásokkal növekedést biztosítsunk számodra.<br /> </h2>
-        <div>
-
-          <a href="#about" class="btn-get-started scrollto">Kezdjük!</a>
         </div>
-      </div>
-
-
-    </section><!-- #intro -->
-    <div class="scroll-downs">
-      <div class="mousey">
-        <div class="scroller"></div>
-      </div>
-    </div>
-    <main id="main">
-      <!--==========================
-        About Section
-      ============================-->
-      <section id="about" class="wow fadeInUp">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 about-img">
-              <img src={% static "images/dognut1.jpg" %}>
-
-            </div>
-
-            <div class="col-lg-6 content">
-              <h2>Hello.</h2>
-              <h3>Dolgozzunk együtt, közösen létrehozzuk az élményt, amely a márkádat unalmastól a vásárlókig viszi.</h3>
-              Ha több pénzt akarsz keresni az online világban, hatékonyabb rendszerben dolgoznál,
-                nem találod célcsoportod, vagy átirányítanád offline értékesítésed az online világba
-                , építs adatvezérelt marketing és kereskedelmi stratégiánkra,
-                fogadd meg, amit tanácsolunk, vagy bízd ránk, hogy megcsináljuk Veled és a csapatoddal közösen
-              </h3>
-            </div>
-          </div>
+        </div>
+        <div class="nav-container">
+        <div class="button_container" id="toggle">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
         </div>
 
-      </section><!-- #about -->
-
-      <!--==========================
-        Services Section
-      ============================-->
-      <section id="services">
-        <div class="container">
-          <div class="section-header">
-            <h2>Szolgáltatások</h2>
-            <p></p>
-          </div>
-
-          <div class="row">
-
-            <div class="col-lg-6">
-              <div class="box wow fadeInLeft">
-                <div class="icon"><i class="fas fa-chart-bar"></i></div>
-                <h4 class="title"><a href="">PPC kampányok</a></h4>
-                <p class="description">Google Ads kampánykezelés, hogy az első helyen szerepelj a google rendszerében.
-                      Állandó kommunikációval és eredmény kimutatással.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="box wow animated infinite pulse slow delay-2s">
-                <div class="icon"><i class="fas fa-fist-raised"></i></div>
-                <h4 class="title"><a href="">SEO</a></h4>
-                <p class="description">A leghatékonyabb vevőszerző módszer jelenleg az, ha honlapja elöl van a Google keresőben. Közös munkával segítünk előre kerülni!</p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="box wow animated infinite pulse slow delay-2s">
-                <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                <h4 class="title"><a href="">Közösségi média</a></h4>
-                <p class="description">Csapatunk segítségével használja ki az új médiumokban rejlő hihetetlen lehetőségeket.</p>
+        <div class="overlay" id="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="#overview"></a></li>
+              <li><a href="#styleguides">Hogyan dolgozunk</a></li>
+              <li><a href="#logo">Blog</a></li>
+              <li><a href="#color-typography">Referenciák</a></li>
+              <li><a href="#web-design">Kapcsolat</a></li>
+            </ul>
+          </nav>
+        </div>
+        </div>
+        <div class="section_head">
+          <h1>DIGITÁLIS<br />MARKETING <br /> <span class="text-primary"></span></h1>
+            <div class="section__text">
+              <h3>Adatvezérelt marketing eszközök.<br />
+                Értsd meg vevőidet és adj el jobban online.
                 <br />
-              </div>
+                 <br /> Lépj velünk kapcsolatba: <a href="mailto:yepense@gmail.com">hello@beenext.hu</a></h3>
             </div>
-            </div>
-          </div>
         </div>
-      </section><!-- #services -->
-
-      <main id="main">
         <!--==========================
           About Section
-        ============================
-        <section id="about" class="wow fadeInUp">
+        ============================-->
+        <section id="about">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 about-img">
-                <div class="pull-right">
-                <img src={% static "images/lio.jpg" %}>
-                </div>
-              </div>
+                <!--<img src={% static "images/ss.png" %}>-->
 
-              <div class="col-lg-6 content">
-                <h2>Miért válassz minket ?</h2>
-                <h3>Ha több pénzt akarsz keresni az online világban, hatékonyabb rendszerben dolgoznál,
-                  nem találod célcsoportod, vagy átirányítanád offline értékesítésed az online világba
-                  , építs adatvezérelt marketing és kereskedelmi stratégiánkra,
-                  fogadd meg, amit tanácsolunk, vagy bízd ránk, hogy megcsináljuk Veled és a csapatoddal közösen</h3>
               </div>
-              <div class="col-lg-3 cta-btn-container">
-                <a class="cta-btn align-middle" href="{% url 'kapcsolat' %}">Kapcsolat felvétel</a>
+              <div class="col-lg-6 content">
+                <h2>Hello.</h2>
+                <h3>Dolgozzunk együtt, közösen létrehozzuk az élményt,
+                    amely a márkádat unalmastól a vásárlókig viszi.</h3>
+                    <h3>Ha több pénzt akarsz keresni az online világban,
+                    hatékonyabb rendszerben dolgoznál,
+                    nem találod célcsoportod, vagy átirányítanád
+                    offline értékesítésed az online világba
+                    ,építs adatvezérelt marketing
+                    és kereskedelmi stratégiánkra,
+                    fogadd meg, amit tanácsolunk, vagy bízd ránk,
+                    hogy megcsináljuk Veled és a csapatoddal közösen
+                </h3>
               </div>
             </div>
           </div>
-        </section>--><!-- #about -->
-
-            <!--==========================
-              Services Section
-            ============================
-            <section id="services2">
-              <div class="container">
-                <div class="section-header">
-                  <h2>Hogyan dolgozunk</h2>
-                  <p></p>
-                </div>
-
-                <div class="row">
-
-                  <div class="col-lg-6">
-                    <div class="">
-                      <h4 class="title"><a href=""></a></h4>
-                      <p class="description"></p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="box wow">
-                      <h4 class="title">1 Beszélgetünk</h4>
-                      <p class="description">Megismerjük céljaid és meghatározzuk merre szeretne céged tartani</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="box wow">
-                      <h4 class="title">2 Adatokat elmezünk</h4>
-                      <p class="description">Piacodat felmérjük adatok segítségével megismerjük vásárlóidat.</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="box wow">
-                      <h4 class="title">3 Kidolgozzuk a tervet</h4>
-                      <p class="description">Az adatok és céljaid figyelmbevételével megalkotjuk a győztes tervet.</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="box wow">
-                      <h4 class="title">4 Megvalósítjuk</h4>
-                      <p class="description">Végigvisszük a tervet szorosan együttmüködve a cégeddel.</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="box wow">
-                      <h4 class="title">5 Elemzünk</h4>
-                      <p class="description">Az eredményeket feldolgozzuk, új lehetőségeket keresünk és segítünk a következő szintre lépni.</p>
-                    </div>
-                  </div>
-
+        </section><!-- #about -->
+        <!--==========================
+          Services Section
+        ============================-->
+        <section id="services">
+          <div class="container">
+             <div class="section-header">
+               <h2>asdasdas </h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="box ">
+                  <div class="icon"><i class="fas fa-chart-bar"></i></div>
+                  <h4 class="title"><a href="">PPC kampányok</a></h4>
+                  <p class="description">Google Ads kampánykezelés, hogy az első helyen szerepelj a google rendszerében.
+                        Állandó kommunikációval és eredmény kimutatással.</p>
                 </div>
               </div>
-            </section>--><!-- #services -->
 
-        <!--  ==========================
-            Call To Action Section
+              <div class="col-sm-4">
+                <div class="box wow animated infinite pulse slow delay-2s">
+                  <div class="icon"><i class="fas fa-fist-raised"></i></div>
+                  <h4 class="title"><a href="">SEO</a></h4>
+                  <p class="description">A leghatékonyabb vevőszerző módszer jelenleg az, ha honlapja elöl van a Google keresőben. Közös munkával segítünk előre kerülni!</p>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                  <div class="box wow animated infinite pulse slow delay-2s">
+                  <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                  <h4 class="title"><a href="">Közösségi média</a></h4>
+                  <p class="description">Csapatunk segítségével használja ki az új közösségi médiában rejlő hihetetlen lehetőségeket.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section><!-- #services-->
+
+          <!--==========================
+            About Section
           ============================-->
-          <section id="call-to-action" class="wow fadeInUp">
+          <section id="about" class="wow fadeInUp">
             <div class="container">
               <div class="row">
-                <div class="col-lg-9 text-center text-lg-left">
-                  <h3 class="cta-title"></h3>
-                  <h4 class="cta-text">
-                    Mindez aprólékosan megtervezett lépésekkel kezdődik, amelyek a Yellow Cow szívét adják.
-                    Mind a stílusra, mind a magas színvonalú funkcionalitásra építünk, továbbá karbantartást és digitális marketinget is kínálunk annak érdekében,
-                    hogy zökkenőmentesen hajózzunk a digitális jövőbe.</h4>
+                <div class="col-lg-6 about-img">
+                  <div class="pull-right">
+                  <img src={% static "images/lio.jpg" %}>
+                  </div>
                 </div>
-                <div class="col-lg-3 cta-btn-container text-center">
+
+                <div class="col-lg-6 content">
+                  <h2>Miért válassz minket ?</h2>
+                  <h3>Ha több pénzt akarsz keresni az online világban, hatékonyabb rendszerben dolgoznál,
+                    nem találod célcsoportod, vagy átirányítanád offline értékesítésed az online világba
+                    , építs adatvezérelt marketing és kereskedelmi stratégiánkra,
+                    fogadd meg, amit tanácsolunk, vagy bízd ránk, hogy megcsináljuk Veled és a csapatoddal közösen</h3>
+                </div>
+                <div class="col-lg-3 cta-btn-container">
                   <a class="cta-btn align-middle" href="{% url 'kapcsolat' %}">Kapcsolat felvétel</a>
                 </div>
               </div>
-
             </div>
-          </section><!-- #call-to-action -->
-    </main>
+          </section><!-- #about -->
 
-    <!--==========================
-      Footer
-    ============================-->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; 2019 <strong> Yellow Cow</strong>. Minden jog fenntartva.
+
+          <!--  ==========================
+              Call To Action Section
+            ============================-->
+            <section id="call-to-action" class="wow fadeInUp">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="cta-title"></h3>
+                    <h4 class="cta-text">
+                      Mindez aprólékosan megtervezett lépésekkel kezdődik, amelyek a Yellow Cow szívét adják.
+                      Mind a stílusra, mind a magas színvonalú funkcionalitásra építünk, továbbá karbantartást és digitális marketinget is kínálunk annak érdekében,
+                      hogy zökkenőmentesen hajózzunk a digitális jövőbe.</h4>
+                  </div>
+                  <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="{% url 'kapcsolat' %}">Kapcsolat felvétel</a>
+                  </div>
+                </div>
+
+              </div>
+            </section><!-- #call-to-action -->
+      <!--==========================
+        Footer
+      ============================-->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            <p> 2019 Made with LOVE</p>
+          </div>
         </div>
-      </div>
-    </footer><!-- #footer -->
-
+      </footer><!-- #footer -->
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
